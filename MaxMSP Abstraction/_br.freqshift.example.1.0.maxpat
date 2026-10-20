@@ -121,7 +121,7 @@
                         603.0,
                         47.0
                     ],
-                    "text": "Sideband: Up or Down. With Up, a negative Shift goes down too. Mix: 0 = dry, 1 = all wet. Off fades over 20 ms, then pauses and clears the echoes. Mix Mode says what you hear when Off: Thru = the dry signal, Aux = silence."
+                    "text": "Sideband: Up or Down (the Shift dial is never negative: 0.000001 - 2000 Hz). B shows the plain object also takes negative signals. Mix: 0 = dry, 1 = all wet. Off fades over 20 ms, then pauses and clears the echoes. Mix Mode says what you hear when Off: Thru = the dry signal, Aux = silence."
                 }
             },
             {
@@ -1730,7 +1730,7 @@
                         130.0,
                         22.0
                     ],
-                    "text": "0 1 250 0 1"
+                    "text": "0.1 1 250 0 1"
                 }
             },
             {
