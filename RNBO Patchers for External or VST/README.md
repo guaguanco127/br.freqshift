@@ -24,7 +24,7 @@ A stereo frequency shifter with a feedback delay: every partial moves by the sam
 
 Inside [rnbo~], the seven params (Shift, Sideband, Delay, Feedback, Mix, MixMode, OnOff) are the plugin parameters, with the same ranges and dial curves as the Max version. Inlets 3 to 9 set the same params, so the external has the same nine inlets as the abstraction. The gen~ code inside is the same as br.freqshift.1.0.
 
-**Shift:** -2000 to 2000 Hz. With Sideband Up, + moves up and - moves down. Default 0.  
+**Shift:** 0.000001 to 2000 Hz. Never negative: Sideband sets the direction. Default 0.1.  
 **Sideband:** Down / Up. Default Up.  
 **Delay:** 1 to 2000 ms between echoes, curved dial. Default 250.  
 **Feedback:** 0 to 0.99. Default 0 (no echoes).  

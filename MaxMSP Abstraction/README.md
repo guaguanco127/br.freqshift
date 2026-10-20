@@ -27,7 +27,7 @@ A stereo frequency shifter for Max/MSP, built in gen~, with a feedback delay. A 
 
 The feedback delay sends each echo back through the shifter, so every repeat moves one more step: up and up, or down and down, a barber-pole spiral of echoes.
 
-**Up or Down:** Sideband picks which way the shift goes. Shift itself is bipolar, so with Up a negative Shift goes down too. Switching Sideband crossfades over 10 ms.
+**Up or Down:** Sideband picks which way the shift goes. Shift itself never goes negative (0.000001 to 2000 Hz), so Sideband alone sets the direction. Switching Sideband crossfades over 10 ms.
 
 **Safe feedback:** Feedback goes up to 0.99 and still can't run away: every pass through the loop goes through a soft limiter (tanh), a DC blocker and a gentle 12 kHz lowpass, so the echoes always fade in the end. Even full-scale noise at maximum Feedback and the shortest Delay stays bounded. If anything ever turns into not-a-number, the loop resets to silence instead of screaming.
 
@@ -41,7 +41,7 @@ The feedback delay sends each echo back through the shifter, so every repeat mov
 
 ### Controls
 
-**Shift:** -2000 to 2000 Hz. How far every partial moves, in Hz. With Sideband Up, + moves up and - moves down. Small values (0.5 - 5 Hz) give phasing and beating; 20 - 50 Hz with Feedback gives the barber-pole; 100 Hz and up gives bells and metal. Default 0.
+**Shift:** 0.000001 to 2000 Hz. How far every partial moves, in Hz. Never negative: Sideband sets the direction. The plain object's Shift inlet also takes -2000 to 2000, for signals that sweep through zero (the example's B). Small values (0.5 - 5 Hz) give phasing and beating; 20 - 50 Hz with Feedback gives the barber-pole; 100 Hz and up gives bells and metal. Default 0.1.
 
 **Sideband:** Down (0) or Up (1), which way the shift goes. Default Up.
 
@@ -79,7 +79,7 @@ Every control has its own inlet, in the same order on both files. On the .ui fil
 |---|---|---|---|---|
 | 1 | Left In | Signal |  |  |
 | 2 | Right In | Signal |  |  |
-| 3 | Shift | Float | -2000 - 2000 Hz | 0 |
+| 3 | Shift | Float | 0.000001 - 2000 Hz (plain object: -2000 - 2000) | 0.1 |
 | 4 | Sideband | Int | 0 Down / 1 Up | 1 |
 | 5 | Delay | Float | 1 - 2000 ms | 250 |
 | 6 | Feedback | Float | 0 - 0.99 | 0 |
@@ -106,7 +106,7 @@ The last outlet of the .ui file (State) sends the current settings as named mess
 
 | Message | Type | Range |
 |---|---|---|
-| shift | Float | -2000 to 2000 Hz |
+| shift | Float | 0.000001 to 2000 Hz |
 | sideband | Int | 0 Down / 1 Up |
 | delay | Float | 1 to 2000 ms |
 | feedback | Float | 0 to 0.99 |

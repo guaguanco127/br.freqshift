@@ -25,7 +25,7 @@ The feedback delay sends each echo back through the shifter, so every repeat mov
 
 A compact stereo audio effect with seven controls, all Live parameters, so you can automate them or map them to a controller. One parameter bank, **Freqshift**: Shift, Sideband, Delay, Feedback, Mix, Mix Mode, On/Off. The device's On/Off fades over 20 ms and pauses the DSP; Live's own device switch bypasses it completely. There is no output gain: use Live's mixer.
 
-**Up or Down:** Sideband picks which way the shift goes. Shift itself is bipolar, so with Up a negative Shift goes down too. Switching Sideband crossfades over 10 ms.
+**Up or Down:** Sideband picks which way the shift goes. Shift itself never goes negative (0.000001 to 2000 Hz), so Sideband alone sets the direction. Switching Sideband crossfades over 10 ms.
 
 **Safe feedback:** Feedback goes up to 0.99 and still can't run away: every pass through the loop goes through a soft limiter (tanh), a DC blocker and a gentle 12 kHz lowpass, so the echoes always fade in the end. Even full-scale noise at maximum Feedback and the shortest Delay stays bounded. If anything ever turns into not-a-number, the loop resets to silence instead of screaming.
 
@@ -35,7 +35,7 @@ A compact stereo audio effect with seven controls, all Live parameters, so you c
 
 **On/Off and Mix Mode:** Off fades over 20 ms, then pauses (no CPU) and clears the echoes, so turning On starts clean. Mix Mode sets what you hear when Off: Thru = the dry signal, Aux = silence, for an aux send.
 
-**Shift:** -2000 to 2000 Hz. How far every partial moves, in Hz. With Sideband Up, + moves up and - moves down. Small values (0.5 - 5 Hz) give phasing and beating; 20 - 50 Hz with Feedback gives the barber-pole; 100 Hz and up gives bells and metal. Default 0.
+**Shift:** 0.000001 to 2000 Hz. How far every partial moves, in Hz. Never negative: Sideband sets the direction. Small values (0.5 - 5 Hz) give phasing and beating; 20 - 50 Hz with Feedback gives the barber-pole; 100 Hz and up gives bells and metal. Default 0.1.
 
 **Sideband:** Down (0) or Up (1), which way the shift goes. Default Up.
 

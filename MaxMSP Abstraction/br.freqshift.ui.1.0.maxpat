@@ -80,7 +80,7 @@
                         30.0
                     ],
                     "index": 3,
-                    "comment": "Shift (Float) -2000 - 2000 Hz. How far every partial moves, in Hz (not a pitch interval). With Sideband Up, + moves up and - moves down. Default 0"
+                    "comment": "Shift (Float) 0.000001 - 2000 Hz. How far every partial moves, in Hz (not a pitch interval). Never negative: Sideband picks Up or Down. Default 0.1"
                 }
             },
             {
@@ -130,12 +130,12 @@
                         "valueof": {
                             "parameter_exponent": 1.0,
                             "parameter_initial": [
-                                0.0
+                                0.1
                             ],
                             "parameter_initial_enable": 1,
                             "parameter_longname": "Shift",
                             "parameter_mmax": 2000.0,
-                            "parameter_mmin": -2000.0,
+                            "parameter_mmin": 0.000001,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Shift",
                             "parameter_type": 0,
@@ -148,7 +148,7 @@
                 "box": {
                     "id": "store-shift",
                     "maxclass": "newobj",
-                    "text": "f 0.0",
+                    "text": "f 0.1",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "patching_rect": [

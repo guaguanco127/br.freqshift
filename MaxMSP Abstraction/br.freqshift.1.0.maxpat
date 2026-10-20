@@ -57,7 +57,7 @@
             },
             {
                 "box": {
-                    "comment": "Shift (Signal/Float) -2000 - 2000 Hz. How far every partial moves, in Hz (not a pitch interval). With Sideband Up, + moves up and - moves down. Default 0",
+                    "comment": "Shift (Signal/Float) -2000 - 2000 Hz. How far every partial moves, in Hz (not a pitch interval). With Sideband Up, + moves up and - moves down (the .ui dial stays 0.000001 - 2000; negatives are for signals sweeping through zero). Default 0.1",
                     "id": "in-2",
                     "index": 3,
                     "maxclass": "inlet",
@@ -328,7 +328,7 @@
                                         152.0,
                                         49.0
                                     ],
-                                    "text": "in 3 @comment shift @default 0 @min -2000 @max 2000"
+                                    "text": "in 3 @comment shift @default 0.1 @min -2000 @max 2000"
                                 }
                             },
                             {

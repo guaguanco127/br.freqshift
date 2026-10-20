@@ -275,7 +275,7 @@
                                 "type": "event",
                                 "index": 3,
                                 "tag": "in3",
-                                "comment": "Shift (Float) -2000 - 2000 Hz. How far every partial moves; in Hz (not a pitch interval). With Sideband Up; + moves up and - moves down. Default 0"
+                                "comment": "Shift (Float) 0.000001 - 2000 Hz. How far every partial moves; in Hz (not a pitch interval). Never negative; Sideband picks Up or Down. Default 0.1"
                             },
                             {
                                 "type": "event",
@@ -293,7 +293,7 @@
                                 "type": "event",
                                 "index": 6,
                                 "tag": "in6",
-                                "comment": "Feedback (Float) 0 - 0.95. How much of each echo goes back in. The loop is soft-limited; so it can never run away. Default 0 (no echoes)"
+                                "comment": "Feedback (Float) 0 - 0.99. How much of each echo goes back in. The loop is soft-limited; so it can never run away. Default 0 (no echoes)"
                             },
                             {
                                 "type": "event",
@@ -429,7 +429,7 @@
                                         190.0,
                                         94.0
                                     ],
-                                    "text": "in 3 @comment \"Shift (Float) -2000 - 2000 Hz. How far every partial moves; in Hz (not a pitch interval). With Sideband Up; + moves up and - moves down. Default 0\"",
+                                    "text": "in 3 @comment \"Shift (Float) 0.000001 - 2000 Hz. How far every partial moves; in Hz (not a pitch interval). Never negative; Sideband picks Up or Down. Default 0.1\"",
                                     "rnbo_classname": "in",
                                     "rnbo_extra_attributes": {
                                         "meta": ""
@@ -455,7 +455,7 @@
                                         180.0,
                                         52.0
                                     ],
-                                    "text": "param Shift 0 @min -2000.0 @max 2000.0 @order 1",
+                                    "text": "param Shift 0.1 @min 0.000001 @max 2000.0 @order 1",
                                     "rnbo_classname": "param",
                                     "rnbo_extra_attributes": {
                                         "enum": "",
@@ -618,7 +618,7 @@
                                         190.0,
                                         94.0
                                     ],
-                                    "text": "in 6 @comment \"Feedback (Float) 0 - 0.95. How much of each echo goes back in. The loop is soft-limited; so it can never run away. Default 0 (no echoes)\"",
+                                    "text": "in 6 @comment \"Feedback (Float) 0 - 0.99. How much of each echo goes back in. The loop is soft-limited; so it can never run away. Default 0 (no echoes)\"",
                                     "rnbo_classname": "in",
                                     "rnbo_extra_attributes": {
                                         "meta": ""
@@ -955,7 +955,7 @@
                                                             152.0,
                                                             49.0
                                                         ],
-                                                        "text": "in 3 @comment shift @default 0 @min -2000 @max 2000"
+                                                        "text": "in 3 @comment shift @default 0.1 @min -2000 @max 2000"
                                                     }
                                                 },
                                                 {
