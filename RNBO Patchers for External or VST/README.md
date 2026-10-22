@@ -1,11 +1,11 @@
-# Max/MSP RNBO Patch for External or VST Creation: br.freqshift.rnbo.1.0  
+# Max/MSP RNBO Patch for External or VST Creation: br.freqshift.rnbo.1.1  
 
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.freqshift.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.freqshift](https://github.com/guaguanco127/br.freqshift)  
+Repository for br.freqshift.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.freqshift](https://github.com/guaguanco127/br.freqshift)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9 and RNBO.
@@ -22,7 +22,7 @@ These files were created with Max 9 and RNBO.
 
 A stereo frequency shifter with a feedback delay: every partial moves by the same number of Hz (bell-like, metallic), and each echo goes back through the shifter for barber-pole spirals. The feedback loop is soft-limited and filtered, so it can never run away, and every control crossfades or glides, so nothing clicks. Works at any sample rate.
 
-Inside [rnbo~], the seven params (Shift, Sideband, Delay, Feedback, Mix, MixMode, OnOff) are the plugin parameters, with the same ranges and dial curves as the Max version. Inlets 3 to 9 set the same params, so the external has the same nine inlets as the abstraction. The gen~ code inside is the same as br.freqshift.1.0.
+Inside [rnbo~], the seven params (Shift, Sideband, Delay, Feedback, Mix, MixMode, OnOff) are the plugin parameters, with the same ranges and dial curves as the Max version. Inlets 3 to 9 set the same params, so the external has the same nine inlets as the abstraction. The gen~ code inside is the same as br.freqshift.1.1.
 
 **Shift:** 0.000001 to 2000 Hz. Never negative: Sideband sets the direction. Default 0.1.  
 **Sideband:** Down / Up. Default Up.  
@@ -46,7 +46,7 @@ A VST is a third party audio plugin generally run within a digital audio worksta
 
 1. Make sure Max 9 is installed on your computer, and that you have an RNBO license.
 
-2. Open br.freqshift.rnbo.1.0.maxpat. Drop a sample of your own onto the [playlist~] and start it to hear it.
+2. Open br.freqshift.rnbo.1.1.maxpat. Drop a sample of your own onto the [playlist~] and start it to hear it.
 
 3. Double-click the [rnbo~] object while the patch is locked.
 
@@ -54,11 +54,11 @@ A VST is a third party audio plugin generally run within a digital audio worksta
 
 5. Select "Max External Export".
 
-6. Name the object br.freqshift.1.0~ and export.
+6. Name the object br.freqshift.1.1~ and export.
 
-**Keep the ~ at the end of the name.** Without it, the external has exactly the same name as the abstraction br.freqshift.1.0, and Max loads whichever one it finds first, so you can't be sure which one you're using. The ~ also follows the Max convention for objects that process audio. Any other name is fine as long as it isn't the name of an abstraction you also use.
+**Keep the ~ at the end of the name.** Without it, the external has exactly the same name as the abstraction br.freqshift.1.1, and Max loads whichever one it finds first, so you can't be sure which one you're using. The ~ also follows the Max convention for objects that process audio. Any other name is fine as long as it isn't the name of an abstraction you also use.
 
-7. Copy the exported .mxo (Mac) or .mxe64 (Windows) into a folder on Max's search path, for example Documents/Max 9/Externals, and add that folder in Options > File Preferences if it isn't listed. Then create an object called br.freqshift.1.0~ in any patch. It has the same inlets as the abstraction, except that the seven controls take numbers only.
+7. Copy the exported .mxo (Mac) or .mxe64 (Windows) into a folder on Max's search path, for example Documents/Max 9/Externals, and add that folder in Options > File Preferences if it isn't listed. Then create an object called br.freqshift.1.1~ in any patch. It has the same inlets as the abstraction, except that the seven controls take numbers only.
 
 ## <a name="ExportVST"></a>How To Export as a VST or AU Audio Plugin
 
@@ -66,7 +66,7 @@ A VST is a third party audio plugin generally run within a digital audio worksta
 
 1. Make sure Max 9 is installed on your computer, and that you have an RNBO license.
 
-2. Open br.freqshift.rnbo.1.0.maxpat.
+2. Open br.freqshift.rnbo.1.1.maxpat.
 
 3. Double-click the [rnbo~] object while the patch is locked.
 

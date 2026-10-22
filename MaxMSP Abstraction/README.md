@@ -1,12 +1,12 @@
 # Max/MSP Abstractions:  
-## br.freqshift.1.0
+## br.freqshift.1.1
 
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/)
 
-Repository for br.freqshift.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.freqshift](https://github.com/guaguanco127/br.freqshift)  
+Repository for br.freqshift.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.freqshift](https://github.com/guaguanco127/br.freqshift)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
 These files were created with Max 9.
@@ -37,7 +37,7 @@ The feedback delay sends each echo back through the shifter, so every repeat mov
 
 **On/Off and Mix Mode:** Off fades over 20 ms, then pauses (no CPU) and clears the echoes, so turning On starts clean. Mix Mode sets what you hear when Off: Thru = the dry signal, Aux = silence, for an aux send.
 
-**Two files:** br.freqshift.1.0 is the plain object: every Float control inlet takes signals as well as numbers, so an LFO can sweep Shift (or anything else). br.freqshift.ui.1.0 adds the panel of dials for a [bpatcher], plus a State outlet.
+**Two files:** br.freqshift.1.1 is the plain object: every Float control inlet takes signals as well as numbers, so an LFO can sweep Shift (or anything else). br.freqshift.ui.1.1 adds the panel of dials for a [bpatcher], plus a State outlet.
 
 ### Controls
 
@@ -65,11 +65,11 @@ By saving your logic in an abstraction, you can create modules that can be used 
 
 1. Make sure you have Max 9 installed in your computer. And, make sure you are using a Max patch that is inside of a folder.  
 
-2. Copy br.freqshift.1.0.maxpat and br.freqshift.ui.1.0.maxpat into the same folder as the Max patch you are using (the .ui file uses the plain object).
+2. Copy br.freqshift.1.1.maxpat and br.freqshift.ui.1.1.maxpat into the same folder as the Max patch you are using (the .ui file uses the plain object).
 
-3. For the version with dials, create a bpatcher object. Then, go inside of its inspector, select "choose" next to "Patcher File" and select br.freqshift.ui.1.0.maxpat. Size the bpatcher to 206 x 78 to show all of the controls.
+3. For the version with dials, create a bpatcher object. Then, go inside of its inspector, select "choose" next to "Patcher File" and select br.freqshift.ui.1.1.maxpat. Size the bpatcher to 206 x 78 to show all of the controls.
 
-4. For the plain object, create an object with its name (br.freqshift.1.0, do not include brackets) and control it through its inlets (see below).
+4. For the plain object, create an object with its name (br.freqshift.1.1, do not include brackets) and control it through its inlets (see below).
 
 ## <a name="Use"></a>How To Use
 
@@ -118,7 +118,7 @@ Each message carries the same value its inlet takes, so a State message can go s
 
 ## <a name="Example"></a>Example Patch
 
-Open _br.freqshift.example.1.0.maxpat (keep it in the same folder as both abstraction files). Pick a source in the menu: drum loop, Anton (both ship with Max), a drone, or your mic. It starts Off. Both outputs start muted at -70 dB: turn on the audio, then raise one slider slowly.
+Open _br.freqshift.example.1.1.maxpat (keep it in the same folder as both abstraction files). Pick a source in the menu: drum loop, Anton (both ship with Max), a drone, or your mic. It starts Off. Both outputs start muted at -70 dB: turn on the audio, then raise one slider slowly.
 
 - **A, the version with dials:** click the recipes, which set Shift, Sideband, Delay, Feedback and Mix through A's inlets: barber-pole up, barber-pole down, bell, slow phasing, metal ring, and back to the defaults.
 - **B, the plain object:** Shift swept slowly between -400 and +400 Hz by a sine (a signal into a control inlet), with Delay 180 ms and Feedback 0.7.

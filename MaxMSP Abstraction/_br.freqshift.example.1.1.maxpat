@@ -15,7 +15,7 @@
             1500.0,
             680.0
         ],
-        "description": "_br.freqshift.example.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: allpass-pair Hilbert structure after Olli Niemitalo (coefficients refit here for 20 Hz - 20 kHz at 44.1 - 192 kHz); frequency shifting as taught in Cipriani & Giri, Electronic Music and Sound Design Vol. 3.",
+        "description": "_br.freqshift.example.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: allpass-pair Hilbert structure after Olli Niemitalo (coefficients refit here for 20 Hz - 20 kHz at 44.1 - 192 kHz); frequency shifting as taught in Cipriani & Giri, Electronic Music and Sound Design Vol. 3.",
         "boxes": [
             {
                 "box": {
@@ -32,7 +32,7 @@
                         716.0,
                         47.0
                     ],
-                    "text": "_br.freqshift.example.1.0 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/ -- Credits: allpass-pair Hilbert structure after Olli Niemitalo (coefficients refit here for 20 Hz - 20 kHz at 44.1 - 192 kHz); frequency shifting as taught in Cipriani & Giri, Electronic Music and Sound Design Vol. 3."
+                    "text": "_br.freqshift.example.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/ -- Credits: allpass-pair Hilbert structure after Olli Niemitalo (coefficients refit here for 20 Hz - 20 kHz at 44.1 - 192 kHz); frequency shifting as taught in Cipriani & Giri, Electronic Music and Sound Design Vol. 3."
                 }
             },
             {
@@ -85,7 +85,7 @@
                         566.0,
                         60.0
                     ],
-                    "text": "Two files, same DSP inside:\nbr.freqshift.1.0 = core, no UI (in: L, R, Shift, Sideband, Delay, Feedback, Mix, Mix Mode, On/Off; out: L, R)\nbr.freqshift.ui.1.0 = the same core with a panel and a State outlet"
+                    "text": "Two files, same DSP inside:\nbr.freqshift.1.1 = core, no UI (in: L, R, Shift, Sideband, Delay, Feedback, Mix, Mix Mode, On/Off; out: L, R)\nbr.freqshift.ui.1.1 = the same core with a panel and a State outlet"
                 }
             },
             {
@@ -1788,7 +1788,7 @@
                         160.0,
                         20.0
                     ],
-                    "text": "A: br.freqshift.ui.1.0"
+                    "text": "A: br.freqshift.ui.1.1"
                 }
             },
             {
@@ -1802,7 +1802,7 @@
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
-                    "name": "br.freqshift.ui.1.0.maxpat",
+                    "name": "br.freqshift.ui.1.1.maxpat",
                     "numinlets": 9,
                     "numoutlets": 3,
                     "offset": [
@@ -2012,7 +2012,7 @@
                                         520.0,
                                         47.0
                                     ],
-                                    "text": "br.freqshift.ui.1.0 sends its state out of its LAST outlet as named messages, the moment a control changes: shift, sideband, delay, feedback, mix, mode, on. Route them by name, not by position."
+                                    "text": "br.freqshift.ui.1.1 sends its state out of its LAST outlet as named messages, the moment a control changes: shift, sideband, delay, feedback, mix, mode, on. Route them by name, not by position."
                                 }
                             },
                             {
@@ -2648,7 +2648,7 @@
                         300.0,
                         22.0
                     ],
-                    "text": "br.freqshift.1.0"
+                    "text": "br.freqshift.1.1"
                 }
             },
             {
