@@ -893,8 +893,8 @@
                                             "rect": [
                                                 100.0,
                                                 100.0,
-                                                1100.0,
-                                                760.0
+                                                1255.0,
+                                                900.0
                                             ],
                                             "boxes": [
                                                 {
@@ -911,7 +911,7 @@
                                                         "patching_rect": [
                                                             20.0,
                                                             20.0,
-                                                            135.0,
+                                                            155.0,
                                                             22.0
                                                         ],
                                                         "text": "in 1 @comment audio L"
@@ -929,9 +929,9 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            142.625,
-                                                            54.0,
-                                                            152.0,
+                                                            190.0,
+                                                            20.0,
+                                                            155.0,
                                                             22.0
                                                         ],
                                                         "text": "in 2 @comment audio R"
@@ -950,9 +950,9 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            265.25,
-                                                            99.0,
-                                                            152.0,
+                                                            360.0,
+                                                            20.0,
+                                                            200.0,
                                                             49.0
                                                         ],
                                                         "text": "in 3 @comment shift @default 0.1 @min -2000 @max 2000"
@@ -963,7 +963,7 @@
                                                         "fontname": "Arial",
                                                         "fontsize": 12.0,
                                                         "id": "obj-4",
-                                                        "linecount": 3,
+                                                        "linecount": 2,
                                                         "maxclass": "newobj",
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
@@ -971,10 +971,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            387.875,
-                                                            157.0,
-                                                            152.0,
-                                                            49.0
+                                                            575.0,
+                                                            20.0,
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "in 4 @comment sideband @default 1 @min 0 @max 1"
                                                     }
@@ -992,9 +992,9 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            510.5,
-                                                            95.0,
-                                                            152.0,
+                                                            790.0,
+                                                            20.0,
+                                                            200.0,
                                                             49.0
                                                         ],
                                                         "text": "in 5 @comment delay @default 250 @min 1 @max 2000"
@@ -1005,6 +1005,7 @@
                                                         "fontname": "Arial",
                                                         "fontsize": 12.0,
                                                         "id": "obj-6",
+                                                        "linecount": 2,
                                                         "maxclass": "newobj",
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
@@ -1012,10 +1013,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            633.125,
-                                                            44.0,
-                                                            316.0,
-                                                            22.0
+                                                            1005.0,
+                                                            20.0,
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "in 6 @comment feedback @default 0 @min 0 @max 0.99"
                                                     }
@@ -1025,7 +1026,7 @@
                                                         "fontname": "Arial",
                                                         "fontsize": 12.0,
                                                         "id": "obj-7",
-                                                        "linecount": 3,
+                                                        "linecount": 2,
                                                         "maxclass": "newobj",
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
@@ -1034,9 +1035,9 @@
                                                         ],
                                                         "patching_rect": [
                                                             755.75,
-                                                            99.0,
-                                                            152.0,
-                                                            49.0
+                                                            157.0,
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "in 7 @comment mix @default 1 @min 0 @max 1"
                                                     }
@@ -1046,7 +1047,7 @@
                                                         "fontname": "Arial",
                                                         "fontsize": 12.0,
                                                         "id": "obj-8",
-                                                        "linecount": 3,
+                                                        "linecount": 2,
                                                         "maxclass": "newobj",
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
@@ -1054,10 +1055,10 @@
                                                             ""
                                                         ],
                                                         "patching_rect": [
-                                                            878.375,
+                                                            970.75,
                                                             157.0,
-                                                            152.0,
-                                                            49.0
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "in 8 @comment mode @default 0 @min 0 @max 1"
                                                     }
@@ -1067,7 +1068,7 @@
                                                         "fontname": "Arial",
                                                         "fontsize": 12.0,
                                                         "id": "obj-9",
-                                                        "linecount": 3,
+                                                        "linecount": 2,
                                                         "maxclass": "newobj",
                                                         "numinlets": 0,
                                                         "numoutlets": 1,
@@ -1076,9 +1077,9 @@
                                                         ],
                                                         "patching_rect": [
                                                             1001.0,
-                                                            95.0,
-                                                            152.0,
-                                                            49.0
+                                                            233.0,
+                                                            200.0,
+                                                            36.0
                                                         ],
                                                         "text": "in 9 @comment on @default 1 @min 0 @max 1"
                                                     }
@@ -1099,7 +1100,7 @@
                                                         ],
                                                         "patching_rect": [
                                                             20.0,
-                                                            299.0,
+                                                            294.0,
                                                             1000.0,
                                                             560.0
                                                         ]
@@ -1110,15 +1111,14 @@
                                                         "fontname": "Arial",
                                                         "fontsize": 12.0,
                                                         "id": "obj-o1",
-                                                        "linecount": 8,
                                                         "maxclass": "newobj",
                                                         "numinlets": 1,
                                                         "numoutlets": 0,
                                                         "patching_rect": [
                                                             20.0,
-                                                            680.0,
-                                                            30.0,
-                                                            116.0
+                                                            884.0,
+                                                            161.0,
+                                                            22.0
                                                         ],
                                                         "text": "out 1 @comment audio L"
                                                     }
@@ -1128,15 +1128,14 @@
                                                         "fontname": "Arial",
                                                         "fontsize": 12.0,
                                                         "id": "obj-o2",
-                                                        "linecount": 8,
                                                         "maxclass": "newobj",
                                                         "numinlets": 1,
                                                         "numoutlets": 0,
                                                         "patching_rect": [
-                                                            200.0,
-                                                            680.0,
-                                                            30.0,
-                                                            116.0
+                                                            1001.0,
+                                                            884.0,
+                                                            161.0,
+                                                            22.0
                                                         ],
                                                         "text": "out 2 @comment audio R"
                                                     }
@@ -1161,6 +1160,12 @@
                                                             "obj-code",
                                                             1
                                                         ],
+                                                        "midpoints": [
+                                                            199.5,
+                                                            84.0,
+                                                            152.125,
+                                                            84.0
+                                                        ],
                                                         "source": [
                                                             "obj-2",
                                                             0
@@ -1172,6 +1177,12 @@
                                                         "destination": [
                                                             "obj-code",
                                                             2
+                                                        ],
+                                                        "midpoints": [
+                                                            369.5,
+                                                            96.0,
+                                                            274.75,
+                                                            96.0
                                                         ],
                                                         "source": [
                                                             "obj-3",
@@ -1185,6 +1196,12 @@
                                                             "obj-code",
                                                             3
                                                         ],
+                                                        "midpoints": [
+                                                            584.5,
+                                                            108.0,
+                                                            397.375,
+                                                            108.0
+                                                        ],
                                                         "source": [
                                                             "obj-4",
                                                             0
@@ -1197,6 +1214,12 @@
                                                             "obj-code",
                                                             4
                                                         ],
+                                                        "midpoints": [
+                                                            799.5,
+                                                            120.0,
+                                                            520.0,
+                                                            120.0
+                                                        ],
                                                         "source": [
                                                             "obj-5",
                                                             0
@@ -1208,6 +1231,12 @@
                                                         "destination": [
                                                             "obj-code",
                                                             5
+                                                        ],
+                                                        "midpoints": [
+                                                            1014.5,
+                                                            132.0,
+                                                            642.625,
+                                                            132.0
                                                         ],
                                                         "source": [
                                                             "obj-6",
@@ -1232,6 +1261,12 @@
                                                         "destination": [
                                                             "obj-code",
                                                             7
+                                                        ],
+                                                        "midpoints": [
+                                                            980.25,
+                                                            208.0,
+                                                            887.875,
+                                                            208.0
                                                         ],
                                                         "source": [
                                                             "obj-8",
