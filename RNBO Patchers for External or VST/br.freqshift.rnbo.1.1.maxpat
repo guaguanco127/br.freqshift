@@ -892,9 +892,9 @@
                                             "classnamespace": "dsp.gen",
                                             "rect": [
                                                 100.0,
-                                                100.0,
+                                                87.0,
                                                 1255.0,
-                                                900.0
+                                                883.0
                                             ],
                                             "boxes": [
                                                 {
@@ -952,7 +952,7 @@
                                                         "patching_rect": [
                                                             360.0,
                                                             20.0,
-                                                            200.0,
+                                                            168.0,
                                                             49.0
                                                         ],
                                                         "text": "in 3 @comment shift @default 0.1 @min -2000 @max 2000"
@@ -974,7 +974,7 @@
                                                             575.0,
                                                             20.0,
                                                             200.0,
-                                                            36.0
+                                                            35.0
                                                         ],
                                                         "text": "in 4 @comment sideband @default 1 @min 0 @max 1"
                                                     }
@@ -994,7 +994,7 @@
                                                         "patching_rect": [
                                                             790.0,
                                                             20.0,
-                                                            200.0,
+                                                            174.0,
                                                             49.0
                                                         ],
                                                         "text": "in 5 @comment delay @default 250 @min 1 @max 2000"
@@ -1016,7 +1016,7 @@
                                                             1005.0,
                                                             20.0,
                                                             200.0,
-                                                            36.0
+                                                            35.0
                                                         ],
                                                         "text": "in 6 @comment feedback @default 0 @min 0 @max 0.99"
                                                     }
@@ -1037,7 +1037,7 @@
                                                             755.75,
                                                             157.0,
                                                             200.0,
-                                                            36.0
+                                                            35.0
                                                         ],
                                                         "text": "in 7 @comment mix @default 1 @min 0 @max 1"
                                                     }
@@ -1058,7 +1058,7 @@
                                                             970.75,
                                                             157.0,
                                                             200.0,
-                                                            36.0
+                                                            35.0
                                                         ],
                                                         "text": "in 8 @comment mode @default 0 @min 0 @max 1"
                                                     }
@@ -1079,7 +1079,7 @@
                                                             1001.0,
                                                             233.0,
                                                             200.0,
-                                                            36.0
+                                                            35.0
                                                         ],
                                                         "text": "in 9 @comment on @default 1 @min 0 @max 1"
                                                     }
