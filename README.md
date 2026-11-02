@@ -20,6 +20,8 @@ These files were created with Max 9, or RNBO.
 [Max/MSP RNBO for External or VST](https://github.com/guaguanco127/br.freqshift/tree/main/RNBO%20Patchers%20for%20External%20or%20VST) To build your own Max external, or a VST or AU audio plugin (needs RNBO)  
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.freqshift/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite  
 
+**Max for Live note:** if Live's audio engine is off (no audio output device chosen, an orange bar at the bottom of Live), the device opens with its controls at 0 or their lowest value. Turn audio on and they jump to their default values by themselves.
+
 ## <a name="About"></a>About
 
 A stereo frequency shifter for Max/MSP, built in gen~, with a feedback delay. A frequency shifter moves every partial of a sound by the same number of Hz. That is not a pitch shift: shifting up 100 Hz turns 200 Hz into 300 Hz but 1000 Hz into 1100 Hz, so the partials stop lining up as harmonics. Voices, trumpet and drums turn bell-like, metallic or robotic; a shift of a few Hz gives slow phasing and beating instead.
